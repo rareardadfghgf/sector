@@ -13,6 +13,7 @@ import { ConstructionGallery } from './components/ConstructionGallery';
 import { Footer } from './components/Footer';
 import { MobileStickyCTA } from './components/MobileStickyCTA';
 import { motion } from 'motion/react';
+import heroPortaria from './assets/images/hero-portaria.webp';
 
 export default function App() {
   return (
@@ -28,7 +29,7 @@ export default function App() {
               Prioridade: portaria.jpg (local) -> Unsplash (fallback)
             */}
             <img 
-              src="/hero-portaria.webp" 
+              src={heroPortaria} 
               alt="Manhattan Hero - Portal" 
               className="w-full h-full object-cover absolute inset-0 z-10"
               onError={(e) => {
