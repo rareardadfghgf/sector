@@ -28,7 +28,7 @@ export default function App() {
               Prioridade: portaria.jpg (local) -> Unsplash (fallback)
             */}
             <img 
-              src="/hero-portaria.webp?v=2" 
+              src="/hero-portaria.webp" 
               alt="Manhattan Hero - Portal" 
               className="w-full h-full object-cover absolute inset-0 z-10"
               onError={(e) => {
