@@ -8,22 +8,9 @@ export function Header() {
         <div className="flex justify-between items-center h-20">
           {/* Logo Section */}
           <div className="flex-shrink-0 flex items-center">
-            {/* Placeholder for the uploaded logo - In a real scenario, this would be the actual image file */}
-            <div className="h-12 w-auto flex items-center justify-center">
-               <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png" 
-                alt="Sector Imóveis" 
-                className="h-full object-contain"
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none';
-                  e.currentTarget.parentElement!.classList.add('fallback-logo');
-                }}
-               />
-               {/* Fallback text/logo simulation if image is missing */}
-               <div className="flex flex-col items-start leading-none fallback-logo-container" style={{ display: 'none' }}>
-                 <span className="text-2xl font-bold text-[#2E5C46] tracking-tighter">SECTOR</span>
-                 <span className="text-[10px] text-gray-500 uppercase tracking-widest">Consultoria Imobiliária</span>
-               </div>
+            <div className="flex flex-col items-start leading-none">
+              <span className="text-2xl font-bold text-[#2E5C46] tracking-tighter">SECTOR</span>
+              <span className="text-[10px] text-gray-500 uppercase tracking-widest">Consultoria Imobiliária</span>
             </div>
           </div>
 

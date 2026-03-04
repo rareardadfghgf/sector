@@ -1,13 +1,13 @@
 import { motion } from 'motion/react';
 
 const constructionImages = [
-  { id: 1, src: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop", title: "Vista Geral do Terreno", legend: "Fev/2026" },
-  { id: 2, src: "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?q=80&w=800&auto=format&fit=crop", title: "Terraplanagem", legend: "Fev/2026" },
-  { id: 3, src: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800&auto=format&fit=crop", title: "Demarcação de Lotes", legend: "Fev/2026" },
+  { id: 1, src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop", title: "Vista Geral do Terreno", legend: "Fev/2026" },
+  { id: 2, src: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800&auto=format&fit=crop", title: "Terraplanagem", legend: "Fev/2026" },
+  { id: 3, src: "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?q=80&w=800&auto=format&fit=crop", title: "Demarcação de Lotes", legend: "Fev/2026" },
   { id: 4, src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop", title: "Infraestrutura Subterrânea", legend: "Fev/2026" },
   { id: 5, src: "https://images.unsplash.com/photo-1584463673574-89c72506b125?q=80&w=800&auto=format&fit=crop", title: "Pavimentação", legend: "Fev/2026" },
   { id: 6, src: "https://images.unsplash.com/photo-1599809275372-b40c7e931627?q=80&w=800&auto=format&fit=crop", title: "Muros de Divisa", legend: "Fev/2026" },
-  { id: 7, src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop", title: "Portaria em Construção", legend: "Fev/2026" },
+  { id: 7, src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=800&auto=format&fit=crop", title: "Portaria em Construção", legend: "Fev/2026" },
   { id: 8, src: "https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?q=80&w=800&auto=format&fit=crop", title: "Áreas de Lazer", legend: "Fev/2026" }
 ];
 
