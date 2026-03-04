@@ -14,7 +14,7 @@ const GalleryItem = ({ src, localSrc, title, subtitle, className = "" }: { src: 
       referrerPolicy="no-referrer"
       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
       onError={(e) => {
-        if (localSrc && e.currentTarget.src.includes(localSrc)) {
+        if (localSrc) {
            e.currentTarget.src = src;
         }
       }}
@@ -47,20 +47,15 @@ export function VisualGallery() {
             <img 
               src="/portaria.png" 
               alt="Portaria 24h - Manhattan" 
-              className="w-full h-full object-cover absolute inset-0 z-20"
+              className="w-full h-full object-cover absolute inset-0 z-10"
               onError={(e) => {
                 const target = e.currentTarget;
                 if (target.src.endsWith('png')) {
                   target.src = "/portaria.jpg";
                 } else {
-                  target.style.display = 'none';
+                  target.src = "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop";
                 }
               }}
-            />
-            <img 
-              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop" 
-              alt="Portaria 24h - Manhattan (Ilustrativa)" 
-              className="w-full h-full object-cover absolute inset-0 z-10"
             />
             <div className="absolute bottom-8 left-8 bg-white/90 backdrop-blur px-6 py-4 rounded-xl z-40 shadow-lg">
               <p className="font-serif text-xl text-gray-900">Portaria 24h</p>

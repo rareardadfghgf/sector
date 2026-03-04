@@ -30,15 +30,12 @@ export default function App() {
             <img 
               src="/task_01kjwj9myrev38b98fqhx7xc2k_1772632774_img_0.webp" 
               alt="Manhattan Hero - Portal" 
-              className="w-full h-full object-cover absolute inset-0 z-20"
-            />
-            <img 
-              src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1920&auto=format&fit=crop" 
-              alt="Manhattan Hero - Fallback" 
               className="w-full h-full object-cover absolute inset-0 z-10"
-              referrerPolicy="no-referrer"
+              onError={(e) => {
+                e.currentTarget.src = "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1920&auto=format&fit=crop";
+              }}
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/60 z-30" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/60 z-20" />
           </div>
           
           <div className="relative z-40 text-center text-white px-4 max-w-5xl mx-auto">
