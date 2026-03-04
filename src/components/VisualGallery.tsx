@@ -45,13 +45,13 @@ export function VisualGallery() {
             className="w-full h-[50vh] md:h-[60vh] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl relative bg-gray-200 group"
           >
             <img 
-              src="/portaria.png" 
+              src="/portaria.png?v=2" 
               alt="Portaria 24h - Manhattan" 
               className="w-full h-full object-cover absolute inset-0 z-10"
               onError={(e) => {
                 const target = e.currentTarget;
-                if (target.src.endsWith('png')) {
-                  target.src = "/portaria.jpg";
+                if (target.src.endsWith('png?v=2')) {
+                  target.src = "/portaria.jpg?v=2";
                 } else {
                   target.src = "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop";
                 }
@@ -74,21 +74,21 @@ export function VisualGallery() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {/* Salão de Festas */}
              <GalleryItem 
-              localSrc="/fachada-externa.jfif"
+              localSrc="/fachada-externa.jpg?v=2"
               src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=800&auto=format&fit=crop" 
               title="Salão de Festas" 
               subtitle="Fachada Externa"
               className="h-64 md:h-80"
             />
             <GalleryItem 
-              localSrc="/salao-de-festa.jfif"
+              localSrc="/salao-de-festa.jpg?v=2"
               src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=800&auto=format&fit=crop" 
               title="Salão de Festas" 
               subtitle="Interno (Decoração)"
               className="h-64 md:h-80"
             />
             <GalleryItem 
-              localSrc="/interno.jfif"
+              localSrc="/interno.jpg?v=2"
               src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=800&auto=format&fit=crop" 
               title="Salão de Festas" 
               subtitle="Interno"
@@ -97,7 +97,7 @@ export function VisualGallery() {
 
             {/* Espaço Gourmet */}
             <GalleryItem 
-              localSrc="/churrasqueira-02.jfif"
+              localSrc="/churrasqueira-02.jpg?v=2"
               src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?q=80&w=800&auto=format&fit=crop" 
               title="Churrasqueira 02" 
               subtitle="Espaço Gourmet"
@@ -106,7 +106,7 @@ export function VisualGallery() {
 
             {/* Academia (3 fotos) */}
             <GalleryItem 
-              localSrc="/academia-01.jfif"
+              localSrc="/academia-01.jpg?v=2"
               src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop" 
               title="Academia" 
               subtitle="Equipamentos de Ponta"
@@ -114,7 +114,7 @@ export function VisualGallery() {
             />
 
             <GalleryItem 
-              localSrc="/academia-03.jfif"
+              localSrc="/academia-03.jpg?v=2"
               src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=800&auto=format&fit=crop" 
               title="Academia" 
               subtitle="Vista Interna"
@@ -123,14 +123,14 @@ export function VisualGallery() {
 
             {/* Kids & Library */}
             <GalleryItem 
-              localSrc="/brinquedoteca.jfif"
+              localSrc="/brinquedoteca.jpg?v=2"
               src="https://images.unsplash.com/photo-1596464716127-f9a8759fa069?q=80&w=800&auto=format&fit=crop" 
               title="Biblioteca" 
               subtitle="Espaço de Leitura e Estudos"
               className="h-64 md:h-80"
             />
             <GalleryItem 
-              localSrc="/playground.jfif"
+              localSrc="/playground.jpg?v=2"
               src="https://images.unsplash.com/photo-1505693416388-b034680950ed?q=80&w=800&auto=format&fit=crop" 
               title="Playground" 
               subtitle="Diversão ao ar livre"
@@ -153,7 +153,7 @@ export function VisualGallery() {
                className="h-[400px] rounded-2xl overflow-hidden relative group"
              >
                <img 
-                 src="/bosque.jpeg" 
+                 src="/bosque.jpg?v=2" 
                  alt="Bosque de Araucárias" 
                  loading="lazy"
                  className="w-full h-full object-cover"

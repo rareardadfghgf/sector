@@ -41,13 +41,13 @@ export function Masterplan() {
               2. Coloque na pasta "public"
             */}
             <img 
-              src="/masterplan.png" 
+              src="/masterplan.png?v=2" 
               alt="Mapa de Implantação - Manhattan" 
               className="w-full h-full object-contain bg-white transition-transform duration-700 group-hover:scale-105"
               onError={(e) => {
                 const target = e.currentTarget;
-                if (target.src.endsWith('png')) {
-                  target.src = "/masterplan.jpg";
+                if (target.src.endsWith('png?v=2')) {
+                  target.src = "/masterplan.jpg?v=2";
                 } else {
                   // Fallback se não encontrar nem png nem jpg
                   target.src = "https://picsum.photos/seed/masterplan/800/600";
