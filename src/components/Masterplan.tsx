@@ -45,14 +45,9 @@ export function Masterplan() {
               alt="Mapa de Implantação - Manhattan" 
               className="w-full h-full object-contain bg-white transition-transform duration-700 group-hover:scale-105"
               onError={(e) => {
-                const target = e.currentTarget;
-                if (target.src.endsWith('png')) {
-                  target.src = "/masterplan.jpg";
-                } else {
-                  // Fallback se não encontrar nem png nem jpg
-                  target.src = "https://picsum.photos/seed/masterplan/800/600";
-                  target.style.objectFit = "cover";
-                }
+                // Fallback se não encontrar
+                e.currentTarget.src = "https://picsum.photos/seed/masterplan/800/600";
+                e.currentTarget.style.objectFit = "cover";
               }}
             />
             

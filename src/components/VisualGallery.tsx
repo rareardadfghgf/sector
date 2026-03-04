@@ -49,12 +49,7 @@ export function VisualGallery() {
               alt="Portaria 24h - Manhattan" 
               className="w-full h-full object-cover absolute inset-0 z-10"
               onError={(e) => {
-                const target = e.currentTarget;
-                if (target.src.endsWith('png')) {
-                  target.src = "/portaria.jpg";
-                } else {
-                  target.src = "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop";
-                }
+                e.currentTarget.src = "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop";
               }}
             />
             <div className="absolute bottom-8 left-8 bg-white/90 backdrop-blur px-6 py-4 rounded-xl z-40 shadow-lg">
@@ -110,6 +105,14 @@ export function VisualGallery() {
               src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop" 
               title="Academia" 
               subtitle="Equipamentos de Ponta"
+              className="h-64 md:h-80"
+            />
+
+            <GalleryItem 
+              localSrc="/academia-02.jpg"
+              src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=800&auto=format&fit=crop" 
+              title="Academia" 
+              subtitle="Espaço Fitness"
               className="h-64 md:h-80"
             />
 
