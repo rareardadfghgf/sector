@@ -145,8 +145,8 @@ export function VisualGallery() {
         {/* 3. Conexão Natureza */}
         <div className="space-y-8">
           <div className="text-center md:text-left">
-             <span className="text-[#2E5C46] font-medium tracking-widest uppercase text-xs md:text-sm">Bem-estar</span>
-             <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mt-2">Conexão com a Natureza</h2>
+            <span className="text-[#2E5C46] font-medium tracking-widest uppercase text-xs md:text-sm">Bem-estar</span>
+            <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mt-2">Conexão com a Natureza</h2>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
              <motion.div 
