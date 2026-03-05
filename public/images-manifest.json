@@ -1,18 +1,16 @@
 {
   "images": [
     "academia-01.webp",
-    "academia-02-new.webp",
-    "academia-03-new.webp",
-    "bosque-new.webp",
-    "brinquedoteca-new.webp",
-    "churrasqueira-02-new.webp",
+    "academia-02.webp",
+    "academia-03.webp",
+    "bosque.webp",
+    "brinquedoteca.webp",
+    "churrasqueira.webp",
     "construction-update-feb-2026.webp",
-    "fachada-externa-new.webp",
+    "fachada.webp",
     "hero-portaria.webp",
     "interno.webp",
-    "masterplan.webp",
-    "playground-new.webp",
-    "portaria.png",
-    "salao-de-festa-new.webp"
+    "playground.webp",
+    "salao-festas.webp"
   ]
 }

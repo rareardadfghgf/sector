@@ -41,14 +41,9 @@ export function Masterplan() {
               2. Coloque na pasta "public"
             */}
             <img 
-              src="/images/masterplan.webp" 
+              src="https://images.unsplash.com/photo-1524813686514-a57563d77965?q=80&w=1200&auto=format&fit=crop" 
               alt="Mapa de Implantação - Manhattan" 
-              className="w-full h-full object-contain bg-white transition-transform duration-700 group-hover:scale-105"
-              onError={(e) => {
-                // Fallback se não encontrar
-                e.currentTarget.src = "https://picsum.photos/seed/masterplan/800/600";
-                e.currentTarget.style.objectFit = "cover";
-              }}
+              className="w-full h-full object-cover bg-white transition-transform duration-700 group-hover:scale-105"
             />
             
             {/* MENSAGEM DE AJUDA REMOVIDA */}
