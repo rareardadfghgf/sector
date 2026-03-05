@@ -1,7 +1,6 @@
 import { Download, Map } from 'lucide-react';
 import { Button } from './ui/Button';
 import { motion } from 'motion/react';
-import masterplanImg from '../assets/images/masterplan.png';
 
 export function Masterplan() {
   return (
@@ -42,7 +41,7 @@ export function Masterplan() {
               2. Coloque na pasta "public"
             */}
             <img 
-              src={masterplanImg} 
+              src="/images/masterplan.webp" 
               alt="Mapa de Implantação - Manhattan" 
               className="w-full h-full object-contain bg-white transition-transform duration-700 group-hover:scale-105"
               onError={(e) => {

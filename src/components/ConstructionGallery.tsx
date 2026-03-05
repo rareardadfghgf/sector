@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 
 const constructionImages = [
-  { id: 1, src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop", title: "Vista Geral do Terreno", legend: "Fev/2026" },
+  { id: 1, src: "/images/construction-update-feb-2026.webp", title: "Vista Geral do Terreno", legend: "Fev/2026" },
   { id: 2, src: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800&auto=format&fit=crop", title: "Terraplanagem", legend: "Fev/2026" },
   { id: 3, src: "https://images.unsplash.com/photo-1590486803833-1c5dc8ddd4c8?q=80&w=800&auto=format&fit=crop", title: "Demarcação de Lotes", legend: "Fev/2026" },
   { id: 4, src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop", title: "Infraestrutura Subterrânea", legend: "Fev/2026" },

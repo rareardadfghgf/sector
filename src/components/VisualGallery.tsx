@@ -1,18 +1,5 @@
 import { motion } from 'motion/react';
 
-// Import images
-import portariaImg from '../assets/images/portaria.png';
-import fachadaExternaImg from '../assets/images/fachada-externa.jpg';
-import salaoFestaImg from '../assets/images/salao-de-festa.jpg';
-import internoImg from '../assets/images/interno.jpg';
-import churrasqueiraImg from '../assets/images/churrasqueira-02.jpg';
-import academia01Img from '../assets/images/academia-01.jpg';
-import academia02Img from '../assets/images/academia-02.jpg';
-import academia03Img from '../assets/images/academia-03.jpg';
-import brinquedotecaImg from '../assets/images/brinquedoteca.jpg';
-import playgroundImg from '../assets/images/playground.jpg';
-import bosqueImg from '../assets/images/bosque.jpg';
-
 const GalleryItem = ({ src, localSrc, title, subtitle, className = "" }: { src: string, localSrc?: string, title: string, subtitle?: string, className?: string }) => (
   <motion.div 
     initial={{ opacity: 0, y: 20 }}
@@ -58,7 +45,7 @@ export function VisualGallery() {
             className="w-full h-[50vh] md:h-[60vh] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl relative bg-gray-200 group"
           >
             <img 
-              src={portariaImg} 
+              src="/images/portaria.png" 
               alt="Portaria 24h - Manhattan" 
               className="w-full h-full object-cover absolute inset-0 z-10"
               onError={(e) => {
@@ -82,21 +69,21 @@ export function VisualGallery() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {/* Salão de Festas */}
              <GalleryItem 
-              localSrc={fachadaExternaImg}
+              localSrc="/images/fachada-externa-new.webp"
               src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=800&auto=format&fit=crop" 
               title="Salão de Festas" 
               subtitle="Fachada Externa"
               className="h-64 md:h-80"
             />
             <GalleryItem 
-              localSrc={salaoFestaImg}
+              localSrc="/images/salao-de-festa-new.webp"
               src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=800&auto=format&fit=crop" 
               title="Salão de Festas" 
               subtitle="Interno (Decoração)"
               className="h-64 md:h-80"
             />
             <GalleryItem 
-              localSrc={internoImg}
+              localSrc="/images/interno.webp"
               src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=800&auto=format&fit=crop" 
               title="Salão de Festas" 
               subtitle="Interno"
@@ -105,7 +92,7 @@ export function VisualGallery() {
 
             {/* Espaço Gourmet */}
             <GalleryItem 
-              localSrc={churrasqueiraImg}
+              localSrc="/images/churrasqueira-02-new.webp"
               src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?q=80&w=800&auto=format&fit=crop" 
               title="Churrasqueira 02" 
               subtitle="Espaço Gourmet"
@@ -114,7 +101,7 @@ export function VisualGallery() {
 
             {/* Academia (3 fotos) */}
             <GalleryItem 
-              localSrc={academia01Img}
+              localSrc="/images/academia-01.webp"
               src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop" 
               title="Academia" 
               subtitle="Equipamentos de Ponta"
@@ -122,7 +109,7 @@ export function VisualGallery() {
             />
 
             <GalleryItem 
-              localSrc={academia02Img}
+              localSrc="/images/academia-02-new.webp"
               src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=800&auto=format&fit=crop" 
               title="Academia" 
               subtitle="Espaço Fitness"
@@ -130,7 +117,7 @@ export function VisualGallery() {
             />
 
             <GalleryItem 
-              localSrc={academia03Img}
+              localSrc="/images/academia-03-new.webp"
               src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=800&auto=format&fit=crop" 
               title="Academia" 
               subtitle="Vista Interna"
@@ -139,14 +126,14 @@ export function VisualGallery() {
 
             {/* Kids & Library */}
             <GalleryItem 
-              localSrc={brinquedotecaImg}
+              localSrc="/images/brinquedoteca-new.webp"
               src="https://images.unsplash.com/photo-1596464716127-f9a8759fa069?q=80&w=800&auto=format&fit=crop" 
               title="Biblioteca" 
               subtitle="Espaço de Leitura e Estudos"
               className="h-64 md:h-80"
             />
             <GalleryItem 
-              localSrc={playgroundImg}
+              localSrc="/images/playground-new.webp"
               src="https://images.unsplash.com/photo-1505693416388-b034680950ed?q=80&w=800&auto=format&fit=crop" 
               title="Playground" 
               subtitle="Diversão ao ar livre"
@@ -169,7 +156,7 @@ export function VisualGallery() {
                className="h-[400px] rounded-2xl overflow-hidden relative group"
              >
                <img 
-                 src={bosqueImg} 
+                 src="/images/bosque-new.webp" 
                  alt="Bosque de Araucárias" 
                  loading="lazy"
                  className="w-full h-full object-cover"
